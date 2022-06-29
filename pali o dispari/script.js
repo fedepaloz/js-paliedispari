@@ -6,23 +6,41 @@ Dichiariamo chi ha vinto. */
 
 
 const evenOdd = prompt("scegli pari o dispari?")
-const insertNumber =parseInt( prompt ("inserisci un numero da 1 a 5"))
+const insertNumber = parseInt(prompt("inserisci un numero da 1 a 5"))
 console.log(evenOdd)
-console.log(insertNumber)
-
- 
-function getRandomNumber(min= 1, max= 5) { 
-    const randomNumber =  Math.floor(Math.random() * (max + 1 - min)) + min;; 
-    return randomNumber }
-
-const computerNumber = getRandomNumber (1, 5)
+console.log('il tuo numero è ' + insertNumber)
 
 
+function getRandomNumber(min = 1, max = 5) {
+    const randomNumber = Math.floor(Math.random() * (max + 1 - min)) + min;;
+    return randomNumber
+}
 
-console.log(computerNumber)
+const computerNumber = getRandomNumber(1, 5)
+
+
+
+console.log("il numero del computer è " + computerNumber)
 
 const sum = insertNumber + computerNumber
 
-console.log(sum)
+console.log("la somma dei numeri è " + sum)
 
-function isEven (sum)
+function isEven(number) {
+    let result;
+    if (number % 2 === 0) {
+        result = "il numero è pari";
+
+    }
+    else { result = false; }
+
+    return result = "il numero è dispari"
+
+}
+
+const sumResult = isEven(sum)
+
+console.log (sumResult)
+
+
+

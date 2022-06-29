@@ -24,6 +24,8 @@ const reversedWord = reverseWord(inputWord);
 
 console.log(reversedWord);
 
+
+
 let message = "la parola è palindroma"
 
 
