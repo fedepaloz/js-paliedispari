@@ -9,7 +9,7 @@ Creare una funzione per capire se la parola inserita è palindroma */
 
 //creo un prompt nel quale chiedo la parola da inserire
 
-let inputWord = prompt("inserisci una parola" , "giraffa")
+let inputWord = prompt("inserisci una parola", "giraffa")
 
 
 
@@ -20,6 +20,22 @@ function reverseWord(word) {
     return result;
 }
 
-const reversedWord = reverseWord("giraffa");
+const reversedWord = reverseWord(inputWord);
 
 console.log(reversedWord);
+
+let message = "la parola è palindroma"
+
+
+if (reversedWord === inputWord) {
+
+
+}
+
+else {
+    reversedWord != inputWord
+    message = "la parola non è palindroma"
+
+}
+
+console.log(message)
